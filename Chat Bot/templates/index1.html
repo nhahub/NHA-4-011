@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data & Book Assistant</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=nyweew6MaGModUBksa0NrEf8OfE2ZU6MruVEBfl6j8mu7t-z6N5ihwn15lMwPFL_C-Kdzt7zpxp6_ciEEagLEdzHyaEbUgwP4tn6_6o6iPDXTNQD5tLznC6AuAK6biYCXcvYptSjUFqpZpcXSY2_C0yBTJibMDhGqMFsscC8yQzB1k4N6Hwx4FnJNRHzt4FxdxxONd8xUtT_QVVLAEIFTjipjevpyWhDw3vdeb6z0gMFGPIwwNCzwM3b0q0i-CC-sQk9M7yzEecFHFLj_TdowMdc60A1EoSupvbYG66T6z2JnKBpyGIxDjd_h2d5gJK0" charset="UTF-8"></script><style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            width: 500px;
+            max-width: 90%;
+            height: 600px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .chat-header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        #chat-box {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .message {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 18px;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        .user-message {
+            align-self: flex-end;
+            background-color: #3498db;
+            color: white;
+            border-bottom-right-radius: 2px;
+        }
+        .bot-message {
+            align-self: flex-start;
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            border-bottom-left-radius: 2px;
+        }
+        .chat-input {
+            display: flex;
+            padding: 15px;
+            background: #fff;
+        }
+        #user-input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            font-size: 1em;
+        }
+        #send-btn {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 0 20px;
+            margin-left: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        #send-btn:hover {
+            background: #219150;
+        }
+        .typing {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">
+        SQL & RAG AI Chatbot
+    </div>
+    <div id="chat-box">
+        <div class="message bot-message">Hello! I am your assistant. You can ask me about student statistics (math scores, averages) or details from the uploaded books.</div>
+    </div>
+    <div id="typing-indicator" class="typing" style="padding-left: 20px;">AI is thinking...</div>
+    <form id="chat-form" class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your question here..." required autocomplete="off">
+        <button type="submit" id="send-btn">Send</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#chat-form').on('submit', function(e) {
+            e.preventDefault();
+            
+            let userMsg = $('#user-input').val();
+            if (userMsg.trim() === '') return;
+
+            // Append user message
+            $('#chat-box').append('<div class="message user-message">' + userMsg + '</div>');
+            $('#user-input').val('');
+            $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+
+            // Show typing indicator
+            $('#typing-indicator').show();
+
+            // Send to Flask
+            $.ajax({
+                url: '/get',
+                type: 'POST',
+                data: { msg: userMsg },
+                success: function(data) {
+                    $('#typing-indicator').hide();
+                    $('#chat-box').append('<div class="message bot-message">' + data.response + '</div>');
+                    $('#chat-box').scrollTop($('#chat-box')[0].scrollHeight);
+                },
+                error: function() {
+                    $('#typing-indicator').hide();
+                    $('#chat-box').append('<div class="message bot-message">Error: Could not reach the server.</div>');
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
