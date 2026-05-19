@@ -96,6 +96,8 @@ This project follows the **Medallion Architecture** approach inside Microsoft Fa
 | **Silver** | Cleaned & standardized data | Missing value handling, normalization, validation, deduplication |
 | **Gold**   | Analytics-ready layer       | Star schema, KPIs, aggregated educational metrics                |
 
+![img](https://github.com/nhahub/NHA-4-011/blob/b0d54c56a175503b6b5eaa4abbb87b1031e2a58b/Documents/Workflow.png)
+
 ### Bronze Layer
 
 Contains raw educational records including:
