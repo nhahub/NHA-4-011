@@ -81,7 +81,7 @@ The dataset represents a complete educational monitoring environment containing:
 
 This project follows the **Medallion Architecture** approach inside Microsoft Fabric:
 
-![img](https://github.com/nhahub/NHA-4-011/blob/b0d54c56a175503b6b5eaa4abbb87b1031e2a58b/Documents/Workflow.png)
+![img](https://github.com/nhahub/NHA-4-011/blob/52b259a4b8a26fe643c58cac4cfacd847a13ec9a/Documents/workflow.jpeg)
 
 ### Bronze Layer
 
