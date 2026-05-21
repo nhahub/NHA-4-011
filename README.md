@@ -14,7 +14,7 @@ The project follows industry best practices including **Medallion Architecture (
 This project covers the complete educational data lifecycle:
 
 * **Data Architecture** — Building a scalable educational lakehouse using Medallion Architecture
-* **ETL Pipelines** — Processing and transforming educational datasets using PySpark & SQL
+* **ELT Pipelines** — Processing and transforming educational datasets using PySpark & SQL
 * **Data Modeling** — Designing analytical models for student monitoring and reporting
 * **Data Quality** — Cleaning missing values, correcting inconsistencies, and standardizing data
 * **Analytics & Reporting** — Developing interactive dashboards in Power BI
@@ -134,7 +134,6 @@ The project includes an intelligent AI-powered chatbot built using a **Retrieval
 * Answers academic and subject-related questions
 * Connected directly to the educational database
 * Performs educational data analysis and statistics using Pandas
-* Generates personalized educational insights and recommendations
 
 ## Chatbot Capabilities
 
@@ -143,9 +142,7 @@ The project includes an intelligent AI-powered chatbot built using a **Retrieval
 * Analyze student performance trends
 * Perform statistical analysis on student data using Pandas
 * Generate insights from educational datasets
-* Recommend educational resources
 * Detect weak subjects and learning gaps
-* Provide personalized academic guidance
 
 ## Hybrid Query Routing Mechanism
 
