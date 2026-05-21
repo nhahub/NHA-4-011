@@ -74,27 +74,12 @@ The dataset represents a complete educational monitoring environment containing:
 * Student wellbeing indicators
 * Learning resource engagement
 * Demographic and socio-economic information
-
-The data is organized into multiple Medallion layers:
-
-| Layer      | Description                                       |
-| ---------- | ------------------------------------------------- |
-| **Bronze** | Raw educational data ingested from source systems |
-| **Silver** | Cleaned and transformed educational data          |
-| **Gold**   | Analytics-ready business models and KPIs          |
-
 ---
 
 
 # 🏗️ Data Architecture
 
 This project follows the **Medallion Architecture** approach inside Microsoft Fabric:
-
-| Layer      | Purpose                     | Transformations                                                  |
-| ---------- | --------------------------- | ---------------------------------------------------------------- |
-| **Bronze** | Raw data ingestion          | Raw educational records stored as-is                             |
-| **Silver** | Cleaned & standardized data | Missing value handling, normalization, validation, deduplication |
-| **Gold**   | Analytics-ready layer       | Star schema, KPIs, aggregated educational metrics                |
 
 ![img](https://github.com/nhahub/NHA-4-011/blob/b0d54c56a175503b6b5eaa4abbb87b1031e2a58b/Documents/Workflow.png)
 
