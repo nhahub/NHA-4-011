@@ -161,6 +161,8 @@ This hybrid architecture allows the chatbot to combine:
 As a result, the system can answer both:
 * Conceptual educational questions
 * Data-driven analytical questions
+![img](https://github.com/nhahub/NHA-4-011/blob/8c5ed5779ffb7d8131ba755584924191ce2e1f38/Documents/chatbot1.jpeg)
+![img](https://github.com/nhahub/NHA-4-011/blob/8c5ed5779ffb7d8131ba755584924191ce2e1f38/Documents/chatbot2.jpeg)
 ---
 
 # 📊 Business Questions Answered by Dashboard
@@ -182,7 +184,8 @@ The Power BI dashboard is divided into six analytical areas:
 
 6. **What correlations exist between subjects and assessments** such as Math, Science, Computer Science, assignments, and final scores?
 
-
+![img](https://github.com/nhahub/NHA-4-011/blob/8c5ed5779ffb7d8131ba755584924191ce2e1f38/Documents/powerbi1.png)
+![img](https://github.com/nhahub/NHA-4-011/blob/8c5ed5779ffb7d8131ba755584924191ce2e1f38/Documents/powerbi2.png)
 ---
 
 # 🚀 Future Enhancements
