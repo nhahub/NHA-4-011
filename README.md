@@ -180,119 +180,20 @@ The dataset includes the following educational attributes:
 The Power BI dashboard is divided into six analytical areas:
 
 ---
+## Research Questions
 
-# 1️⃣ Academics & Demographics
+1. **How do academic and demographic factors** (department, gender, age, and subject difficulty) influence student performance?
 
-### Key Analyses
+2. **How do socio-economic factors** such as family income, parent education, and internet access affect academic achievement and LMS engagement?
 
-* Department vs Grade
-* Scores by Gender
-* Age Impact in Same Department
-* Hardest and Easiest Subjects
+3. **How do student wellbeing and study habits** including study hours, sleep quality, stress levels, and extracurricular activities impact academic success?
 
-### Insights
+4. **How does LMS engagement** (login frequency, active hours, and resource access) contribute to student performance and learning outcomes?
 
-* Compare student performance across departments
-* Identify gender-based subject strengths
-* Detect difficult subjects requiring support
-* Analyze age impact on academic achievement
+5. **How do attendance and behavioral patterns** such as academic attendance, late assignments, and procrastination affect student achievement?
 
----
+6. **What correlations exist between subjects and assessments** such as Math, Science, Computer Science, assignments, and final scores?
 
-# 2️⃣ Socio-Economic Analysis
-
-### Key Analyses
-
-* Parent Education vs Grade
-* Income vs Internet Access
-* Internet Access vs LMS Usage
-* Income Level vs Grade
-
-### Insights
-
-* Analyze socio-economic impact on education
-* Detect digital inequality among students
-* Measure internet availability impact on LMS engagement
-
----
-
-# 3️⃣ Wellbeing & Student Habits
-
-### Key Analyses
-
-* Study Hours vs Grade
-* Sleep vs Stress
-* Stress vs Grades
-* Extracurricular Activities vs Study Hours
-* Extracurricular Activities vs Stress
-
-### Insights
-
-* Identify optimal study habits
-* Measure stress impact on academic performance
-* Analyze student mental wellbeing
-
----
-
-# 4️⃣ LMS Engagement Analytics
-
-### Key Analyses
-
-* LMS Login Frequency vs Grade
-* Active Hours vs Scores
-* Resource Access vs Grade
-
-### Insights
-
-* Analyze student engagement with learning platforms
-* Measure impact of LMS activity on performance
-* Evaluate effectiveness of educational resources
-
----
-
-# 5️⃣ Attendance & Compliance
-
-### Key Analyses
-
-* Academic Attendance vs Grade
-* Non-Academic Attendance vs Activities
-* Late Assignments vs LMS Logins
-* Late Assignments vs Grade
-* Stress vs Late Assignments
-
-### Insights
-
-* Measure attendance impact on grades
-* Detect procrastination patterns
-* Identify behavioral risks affecting academic success
-
----
-
-# 6️⃣ Subject Correlation Analysis
-
-### Key Analyses
-
-* Math vs Science
-* Math vs Computer Science
-* Language Skills Correlation
-* Assignments vs Final Score
-
-### Insights
-
-* Analyze subject relationships
-* Detect STEM capability trends
-* Evaluate assignment effectiveness as a performance predictor
-
----
-
-# 📈 Key Insights Generated
-
-* Students with higher LMS engagement tend to achieve better academic results
-* Academic attendance strongly affects final grades
-* High stress levels negatively impact performance and assignment completion
-* Internet access significantly influences LMS participation
-* Continuous assignment performance predicts final academic success
-* Balanced extracurricular participation can improve student wellbeing
 
 ---
 
