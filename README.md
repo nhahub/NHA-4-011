@@ -67,13 +67,23 @@ This project demonstrates both **Data Engineering** and **Educational Analytics*
 
 The dataset represents a complete educational monitoring environment containing:
 
-* Student academic records
-* Attendance tracking
-* Assignment performance
-* LMS activity monitoring
-* Student wellbeing indicators
-* Learning resource engagement
-* Demographic and socio-economic information
+# 📊 Available Dataset Columns
+
+The dataset includes the following educational attributes:
+
+| Category                       | Columns                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Student Information**        | Student_ID, First_Name, Last_Name, Email, Gender, Age                                                |
+| **Academic Data**              | Department, Grade, Total_Avg, last_score                                                             |
+| **Subject Scores**             | Math_Score, Science_Score, English_Score, French_Score, Social_Studies_Score, Computer_Science_Score |
+| **Assignments**                | assi_Math, assi_Science, assi_English, assi_French, assi_Social_Studie, assi_computer_science        |
+| **Attendance**                 | academic_attendance, non_academic_attendance                                                         |
+| **LMS Analytics**              | lms_login_freq_per_day, lms_active_avg_hrs, resource_access_avg_hrs                                  |
+| **Student Habits & Wellbeing** | Study_Hours_per_Week, Stress_Level, Stress_Level_1_10, Sleep_Hours_per_Night                         |
+| **Socio-Economic Data**        | Parent_Education_Level, Family_Income_Level, Internet_Access_at_Home                                 |
+| **Activities**                 | Extracurricular_Activities                                                                           |
+| **Assignments & Compliance**   | assi_late                                                                                            |
+
 ---
 
 
@@ -154,25 +164,6 @@ This hybrid architecture allows the chatbot to combine:
 As a result, the system can answer both:
 * Conceptual educational questions
 * Data-driven analytical questions
----
-
-# 📊 Available Dataset Columns
-
-The dataset includes the following educational attributes:
-
-| Category                       | Columns                                                                                              |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| **Student Information**        | Student_ID, First_Name, Last_Name, Email, Gender, Age                                                |
-| **Academic Data**              | Department, Grade, Total_Avg, last_score                                                             |
-| **Subject Scores**             | Math_Score, Science_Score, English_Score, French_Score, Social_Studies_Score, Computer_Science_Score |
-| **Assignments**                | assi_Math, assi_Science, assi_English, assi_French, assi_Social_Studie, assi_computer_science        |
-| **Attendance**                 | academic_attendance, non_academic_attendance                                                         |
-| **LMS Analytics**              | lms_login_freq_per_day, lms_active_avg_hrs, resource_access_avg_hrs                                  |
-| **Student Habits & Wellbeing** | Study_Hours_per_Week, Stress_Level, Stress_Level_1_10, Sleep_Hours_per_Night                         |
-| **Socio-Economic Data**        | Parent_Education_Level, Family_Income_Level, Internet_Access_at_Home                                 |
-| **Activities**                 | Extracurricular_Activities                                                                           |
-| **Assignments & Compliance**   | assi_late                                                                                            |
-
 ---
 
 # 📊 Business Questions Answered by Dashboard
