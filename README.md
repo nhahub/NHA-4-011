@@ -67,9 +67,6 @@ This project demonstrates both **Data Engineering** and **Educational Analytics*
 
 The dataset represents a complete educational monitoring environment containing:
 
-# 📊 Available Dataset Columns
-
-The dataset includes the following educational attributes:
 
 | Category                       | Columns                                                                                              |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------- |
