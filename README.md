@@ -169,9 +169,6 @@ As a result, the system can answer both:
 
 The Power BI dashboard is divided into six analytical areas:
 
----
-## Research Questions
-
 1. **How do academic and demographic factors** (department, gender, age, and subject difficulty) influence student performance?
 
 2. **How do socio-economic factors** such as family income, parent education, and internet access affect academic achievement and LMS engagement?
