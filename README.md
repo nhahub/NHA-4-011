@@ -123,7 +123,7 @@ Contains:
 ---
 
 
-# 🤖 AI Chatbot (RAG + Pandas Analytical System)
+# 🤖 AI Chatbot (RAG + SQL Analytical System)
 
 The project includes an intelligent AI-powered chatbot built using a **Retrieval-Augmented Generation (RAG)** architecture combined with **Pandas-based educational data analysis**.
 
